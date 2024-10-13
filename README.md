@@ -5,6 +5,10 @@ This is a lightweight *www.kupi.cz* web scraper for scraping **sales** and **rec
 ## Instalation
 > pip install kupiapi
 
+PyPi page: [https://pypi.org/project/kupiapi/](https://pypi.org/project/kupiapi/)
+
+GitHub page: [https://github.com/vorava/kupiapi](https://github.com/vorava/kupiapi)
+
 ## Usage
     import kupiapi.recipes
     import kupiapi.scraper
