@@ -6,6 +6,12 @@ This is a lightweight *www.kupi.cz* web scraper for scraping **sales** and **rec
 > pip install kupiapi
 
 ## Usage
+    import kupiapi.recipes
+    import kupiapi.scraper
 
 
 ## Examples
+    import kupiapi.recipes
+    kr = kupiapi.recipes.KupiRecipes()
+    
+    print(kr.get_categories())

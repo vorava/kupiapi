@@ -5,5 +5,5 @@ out.txt
 .venv/
 .DS_Store
 dist/
-kupi_api.egg-info/
+kupiapi.egg-info/
 build/

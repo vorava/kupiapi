@@ -1,5 +1,5 @@
 import unittest
-from kupi_api.recipes import KupiRecipes
+from kupiapi.recipes import KupiRecipes
 
 class TestKupiScraper(unittest.TestCase):
     

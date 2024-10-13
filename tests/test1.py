@@ -1,5 +1,5 @@
 import unittest
-from kupi_api.scraper import KupiScraper
+from kupiapi.scraper import KupiScraper
 import json
 
 class TestKupiScraper(unittest.TestCase):

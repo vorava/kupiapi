@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 # kupi.cz web scraper for scraping recipes into JSON
 import requests
 from bs4 import BeautifulSoup

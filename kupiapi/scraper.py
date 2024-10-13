@@ -1,7 +1,8 @@
+#!/usr/bin/env python
 # kupi.cz web scraper for scraping sales into JSON
 import requests
 from bs4 import BeautifulSoup
-from kupi_api.text_parser import TextParser
+from kupiapi.text_parser import TextParser
 import json
 
 class KupiScraper:
