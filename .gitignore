@@ -1,0 +1,9 @@
+__pycache__/
+main.py
+out.txt
+*.pyc
+.venv/
+.DS_Store
+dist/
+kupi_api.egg-info/
+build/
