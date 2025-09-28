@@ -7,3 +7,5 @@ out.txt
 dist/
 kupiapi.egg-info/
 build/
+temp.py
+test1.py

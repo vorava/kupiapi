@@ -1,11 +1,14 @@
 import unittest
-from kupiapi.scraper import KupiScraper
+#from kupiapi.scraper import KupiScraper
 import json
+import sys
+sys.path.append('../')
+import kupiapi.scraper as scraper
 
 class TestKupiScraper(unittest.TestCase):
     
     def setUp(self):
-        self.kupi = KupiScraper()
+        self.kupi = scraper.KupiScraper()
         
     def test_search(self):
         print("Testing search")
@@ -20,7 +23,9 @@ class TestKupiScraper(unittest.TestCase):
     def test_category(self):
         print("Testing category")
         products = self.kupi.get_discounts_by_category('pivo')
-        print(products)
+        products =json.loads(products)
+        product_names = [product['shops'] for product in products]
+        print(product_names)
         print("#"*20)
         
     def test_category_shop(self):

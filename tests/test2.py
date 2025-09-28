@@ -1,4 +1,6 @@
 import unittest
+import sys
+sys.path.append('../')
 from kupiapi.recipes import KupiRecipes
 
 class TestKupiScraper(unittest.TestCase):

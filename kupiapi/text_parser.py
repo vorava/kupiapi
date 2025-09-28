@@ -16,7 +16,9 @@ class TextParser:
         Returns:
             str: The cleaned string.
         """
-        output_text = text_to_clean.strip().replace(u'\xa0', ' ').replace(u'\n', ' ')
+       
+        output_text = text_to_clean.replace(u'\xa0', ' ').replace(u'\n', '').strip()
+        output_text = ' '.join(output_text.split()) # remove multiple spaces
         if output_text[0] == '/':
             output_text = output_text[1:].strip()
             

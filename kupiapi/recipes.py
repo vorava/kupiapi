@@ -15,7 +15,7 @@ class KupiRecipes:
     def get_categories(self):
         return self.CATEGORIES
 
-    def __get_recipes(self, url, full=False, from_search=False):
+    def __get_recipes(self, url:str, full:bool=False, from_search:bool=False):
         """
         Private method for scraping recipes from given url.
 
@@ -75,7 +75,7 @@ class KupiRecipes:
         
     
     
-    def get_recipes_by_category(self, category, full=False):
+    def get_recipes_by_category(self, category:str, full: bool=False):
         """
         Gets recipes by category.
 
@@ -89,7 +89,7 @@ class KupiRecipes:
         url = self.url + category        
         return self.__get_recipes(url, full)
         
-    def get_all_recipes(self, full=False):
+    def get_all_recipes(self, full: bool=False): 
         """
         Gets all recipes from all categories.
 
@@ -105,7 +105,7 @@ class KupiRecipes:
             
         return recipes
     
-    def get_recipe_detail(self, recipe_url):
+    def get_recipe_detail(self, recipe_url:str):
         """
         Gets detail of single recipe.
 
@@ -117,7 +117,7 @@ class KupiRecipes:
         """
         return json.dumps(self.__get_recipe_detail(recipe_url), ensure_ascii=False)
     
-    def __get_recipe_detail(self, recipe_url):
+    def __get_recipe_detail(self, recipe_url:str):
         """
         Private method for scraping details of single recipe.
 
@@ -217,7 +217,7 @@ class KupiRecipes:
             
         return recipe_data
     
-    def get_recipe_by_search(self, search, full=False):
+    def get_recipe_by_search(self, search:str, full:bool=False):
         """
         Gets recipes by search.
 
