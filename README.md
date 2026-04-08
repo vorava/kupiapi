@@ -11,6 +11,17 @@ PyPi page of the library: [https://pypi.org/project/kupiapi/](https://pypi.org/p
 
 GitHub page of the library: [https://github.com/vorava/kupiapi](https://github.com/vorava/kupiapi)
 
+##Locations
+Praha- 598879
+Brno- 9415260
+Ostrava- 9413950
+Plzeň- 9406392
+Liberec- 9408638
+Olomouc- 500496
+
+##How to find my location
+On Kupi change the location to your city. Press F12 to open Developer Tools. Then click on Application > Cookies and find there find "user_locality". 
+
 ## Usage
     import kupiapi.scraper # imports KupiScraper() class
     import kupiapi.recipes # imports KupiRecipes() class
