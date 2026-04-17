@@ -80,7 +80,7 @@ Returns all possible categories of recipes.
 
 1. On [Kupi.cz](https://www.kupi.cz), change the location to your city.
 2. Press `F12` to open **Developer Tools**.
-3. Navigate to the **Application** tab (v Chrome/Edge) or **Storage** tab (ve Firefoxu).
+3. Navigate to the **Application** tab (in Chrome/Edge) or **Storage** tab (in Firefoxu).
 4. In the left menu, expand **Cookies** and select the Kupi URL.
 5. Find the value for the cookie named `user_locality`.
 
