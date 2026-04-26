@@ -11,6 +11,7 @@ PyPi page of the library: [https://pypi.org/project/kupiapi/](https://pypi.org/p
 
 GitHub page of the library: [https://github.com/vorava/kupiapi](https://github.com/vorava/kupiapi)
 
+
 ## Usage
     import kupiapi.scraper # imports KupiScraper() class
     import kupiapi.recipes # imports KupiRecipes() class
@@ -64,6 +65,25 @@ Gets detail of recipe by url (string value). Its mandatory to provide correct ur
 
 Returns all possible categories of recipes.
 
+## Locations
+Scraper can be configured to use custom locations. The biggest Czech cities locations are listed in the table below. You can set location in **KupiScraper** object constructor (see example below).
+
+| City | ID |
+| :--- | :--- |
+| **Praha** | 598879 |
+| **Brno** | 9415260 |
+| **Ostrava** | 9413950 |
+| **Plzeň** | 9406392 |
+| **Liberec** | 9408638 |
+| **Olomouc** | 500496 |
+
+## How to find my location
+
+1. On [Kupi.cz](https://www.kupi.cz), change the location to your city.
+2. Press `F12` to open **Developer Tools**.
+3. Navigate to the **Application** tab (in Chrome/Edge) or **Storage** tab (in Firefox).
+4. In the left menu, expand **Cookies** and select the Kupi URL.
+5. Find the value for the cookie named `user_locality`.
 
 
 ## Examples
@@ -76,7 +96,7 @@ Returns all possible categories of recipes.
     import kupiapi.scraper
     import kupiapi.recipes
 
-    sc = kupiapi.scraper.KupiScraper()
+    sc = kupiapi.scraper.KupiScraper(locality_id="500496")
     rc = kupiapi.recipes.KupiRecipes()
 
     print(sc.get_discounts_by_search('pivo'))
