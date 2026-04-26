@@ -90,7 +90,7 @@ class KupiScraper:
         else:
             return json.dumps([])
 
- def get_discounts_by_category(self, category:str, max_pages:int=0):
+    def get_discounts_by_category(self, category:str, max_pages:int=0):
         """
         Gets discounts by category.
 

@@ -66,6 +66,7 @@ Gets detail of recipe by url (string value). Its mandatory to provide correct ur
 Returns all possible categories of recipes.
 
 ## Locations
+Scraper can be configured to use custom locations. The biggest Czech cities locations are listed in the table below. You can set location in **KupiScraper** object constructor (see example below).
 
 | City | ID |
 | :--- | :--- |
@@ -95,7 +96,7 @@ Returns all possible categories of recipes.
     import kupiapi.scraper
     import kupiapi.recipes
 
-    sc = kupiapi.scraper.KupiScraper()
+    sc = kupiapi.scraper.KupiScraper(locality_id="500496")
     rc = kupiapi.recipes.KupiRecipes()
 
     print(sc.get_discounts_by_search('pivo'))
